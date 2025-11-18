@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const ship = shipments[trackingID];
                 statusDisplay.textContent = `Status: ${ship.status} (From: ${ship.sender} To: ${ship.recipient})`;
 
-                // Dynamic color based on status
+                  Dynamic color based on status
                 const statusColors = {
                     "processing": "yellow",
                     "in transit": "blue",
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Delete or Edit shipment
+       Delete or Edit shipment
     document.addEventListener("click", e => {
         if (e.target.classList.contains("deleteBtn")) {
             const id = e.target.dataset.id;
@@ -114,14 +114,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Close edit modal
+       Close edit modal
     if (closeModal) {
         closeModal.onclick = () => {
             editModal.style.display = "none";
         };
     }
 
-    // Save edits
+       Save edits
     if (editForm) {
         editForm.addEventListener("submit", e => {
             e.preventDefault();
@@ -140,8 +140,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initial render
+       Initial render
     renderShipments();
 });
+
 
 
