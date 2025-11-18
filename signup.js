@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let users = JSON.parse(localStorage.getItem("users")) || { "admin": "admin123" };
+    let users = JSON.parse(localStorage.getItem("users")) || { "mac": "mac123" };
     localStorage.setItem("users", JSON.stringify(users));
 
     const signupForm = document.getElementById("signupForm");
@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
