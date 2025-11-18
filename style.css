@@ -1,4 +1,4 @@
-/* General Reset */
+ General Reset 
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body (Background Image + Defaults) */
+  (Background Image + Defaults)
 body {
     background-image: url('images/background.jpg');
     background-size: cover;
@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+ Header 
 header {
     background-color: #131212;
     color: #bcfa03;
@@ -59,7 +59,7 @@ h2 {
     font-size: 1.8em;
 }
 
-/* Buttons */
+ Buttons
 .button, button {
     display: inline-block;
     background-color: #161616;
@@ -78,14 +78,14 @@ h2 {
     background-color: #e68200;
 }
 
-/* About Section */
+ About Section 
 #about p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1em;
 }
 
-/* Image Section */
+ Image Section 
 #shipping-image img {
     border-radius: 10px;
     margin-bottom: 15px;
@@ -96,7 +96,7 @@ h2 {
     color: #dddde6;
 }
 
-/* Shipping Services Section */
+ Shipping Services Section 
 #shipping-services {
     text-align: center;
     padding: 40px 20px;
@@ -152,7 +152,7 @@ h2 {
     line-height: 1.4;
 }
 
-/* Forms */
+ Forms 
 form {
     display: flex;
     flex-direction: column;
@@ -199,9 +199,8 @@ form button:hover {
     font-size: 1.1em;
 }
 
-/* -----------------------------
+
    Admin Table Styling
------------------------------ */
 #shipmentTable {
     width: 100%;
     border-collapse: collapse;
@@ -219,7 +218,7 @@ form button:hover {
     color: #fff;
 }
 
-/* Edit/Delete Buttons */
+ Edit/Delete Buttons 
 .editBtn {
     background-color: #4CAF50;
     color: white;
@@ -238,9 +237,8 @@ form button:hover {
     background-color: #d32f2f;
 }
 
-/* -----------------------------
+
    Modal Styles
------------------------------ */
 #editModal {
     display: none;
     position: fixed;
@@ -297,3 +295,4 @@ footer {
     background-color: #1a1a1a;
     color: #fff;
 }
+
