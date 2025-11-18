@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Mars.co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mars.co Shipping</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="track.html">Track Shipment</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" style="color:red;"></p>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mars.co Shipping</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

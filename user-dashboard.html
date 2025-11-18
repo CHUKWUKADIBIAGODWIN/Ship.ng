@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard - Mars.co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mars.co Shipping User Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="track.html">Track Shipment</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Track Your Shipment</h2>
+        <form>
+            <label for="shipment_id_user">Enter Tracking ID:</label>
+            <input type="text" id="shipment_id_user" placeholder="Tracking ID" required>
+            <button type="submit">Track</button>
+        </form>
+        <p id="userStatus" style="margin-top:15px;"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mars.co Shipping</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Mars.co</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Simple modal styles */
+        #editModal {
+            display: none;
+            position: fixed;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        #editModalContent {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="track.html">Track Shipment</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add Shipment</h2>
+        <form id="shipmentForm">
+            <label for="trackingId">Tracking ID:</label>
+            <input type="text" id="trackingId" required>
+
+            <label for="sender">Sender:</label>
+            <input type="text" id="sender" required>
+
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="statusSelect">Status:</label>
+            <select id="statusSelect" required>
+                <option value="Processing">Processing</option>
+                <option value="In Transit">In Transit</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Seized">Seized</option>
+                <option value="Danger">Danger</option>
+                <option value="Stalled">Stalled</option>
+            </select>
+
+            <button type="submit">Add Shipment</button>
+        </form>
+
+        <h2>Shipments</h2>
+        <table border="1" id="shipmentTable">
+            <tr>
+                <th>ID</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+
+        <!-- Edit Modal -->
+        <div id="editModal">
+            <div id="editModalContent">
+                <h3>Edit Shipment</h3>
+                <form id="editForm">
+                    <label for="editSender">Sender:</label>
+                    <input type="text" id="editSender" required>
+
+                    <label for="editRecipient">Recipient:</label>
+                    <input type="text" id="editRecipient" required>
+
+                    <label for="editAddress">Address:</label>
+                    <input type="text" id="editAddress" required>
+
+                    <label for="editStatus">Status:</label>
+                    <select id="editStatus" required>
+                        <option value="Processing">Processing</option>
+                        <option value="In Transit">In Transit</option>
+                        <option value="Delivered">Delivered</option>
+                        <option value="Seized">Seized</option>
+                        <option value="Danger">Danger</option>
+                        <option value="Stalled">Stalled</option>
+                    </select>
+
+                    <button type="submit">Save</button>
+                    <button type="button" id="closeModal">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mars.co Shipping</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

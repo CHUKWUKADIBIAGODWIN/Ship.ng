@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Shipment - Mars.co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mars.co Shipping</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="track.html">Track Shipment</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Track Your Shipment</h2>
+        <form id="trackForm">
+            <label for="shipment_id">Tracking ID:</label>
+            <input type="text" id="shipment_id" name="shipment_id" required>
+            <button type="submit">Track</button>
+        </form>
+        <p id="status"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mars.co Shipping</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
