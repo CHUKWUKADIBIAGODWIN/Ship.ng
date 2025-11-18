@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
        LOAD USERS (required by tracking page)
     ------------------------------------- */
     let users = JSON.parse(localStorage.getItem("users")) || {
-        "admin": "admin123"
+        "mac": "mac123"
     };
     localStorage.setItem("users", JSON.stringify(users));
 
@@ -153,3 +153,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial render
     renderShipments();
 });
+
