@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* -------------------------------------
-       LOAD USERS (required by tracking page)
-    ------------------------------------- */
     let users = JSON.parse(localStorage.getItem("users")) || {
         "mac": "mac123"
     };
     localStorage.setItem("users", JSON.stringify(users));
 
-    /* -------------------------------------
-       SHIPMENTS DATA (localStorage)
-    ------------------------------------- */
     let shipments = JSON.parse(localStorage.getItem("shipments")) || {
         "12345": { sender: "Mac-Anthony", recipient: "Samuel", address: "123 Street", status: "Processing" },
         "67890": { sender: "Samuel", recipient: "Mary", address: "456 Avenue", status: "In Transit" },
@@ -20,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     localStorage.setItem("shipments", JSON.stringify(shipments));
 
-    /* -------------------------------------
-       TRACKING PAGE
-    ------------------------------------- */
+    
     const trackForm = document.querySelector("form#trackForm");
     const statusDisplay = document.getElementById("status");
 
@@ -54,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* -------------------------------------
-       ADMIN PAGE (add + delete + edit)
-    ------------------------------------- */
+  
     const shipmentForm = document.getElementById("shipmentForm");
     const shipmentTable = document.getElementById("shipmentTable");
 
@@ -153,4 +143,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial render
     renderShipments();
 });
+
 
